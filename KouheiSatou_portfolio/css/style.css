@@ -1,0 +1,415 @@
+@charset "UTF-8";
+
+/* --------------------------------
+ * base
+ * -------------------------------- */
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #151515 url('../images/DSC_2135.jpeg') no-repeat fixed left bottom;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: Raleway, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+/* --------------------------------
+ * parts
+ * -------------------------------- */
+.heading {
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+.heading::before,
+.heading::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+.heading::before {
+  bottom: 5px;
+}
+.button {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #afa58d;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  opacity: 0.5;
+}
+.button:hover {
+  opacity: 0.9;
+}
+.button-showy {
+  background-color: #D29E04;
+  opacity: 0.5;
+}
+.button-ghost {
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+/* --------------------------------
+ * header
+ * -------------------------------- */
+.header {
+  padding: 170px 30px 80px;
+  height: 750px;
+}
+.site-title-sub {
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+}
+.site-title-sub::before,
+.site-title-sub::after {
+  content: '';
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+.site-title {
+  margin: 50px 0 40px;
+  font-size: 12rem;
+}
+.site-description {
+  margin-bottom: 50px;
+  color: #888;
+  font-size: 4rem;
+}
+.buttons {
+  padding-top: 130px;
+}
+.buttons .button {
+  margin: 10px;
+}
+
+
+/* --------------------------------
+ * about
+ * -------------------------------- */
+.about {
+  padding: 50px 30px;
+  background-color: rgb(235, 186, 113);
+  color: #333;
+}
+#img-profile {
+  width: 250px;
+  height: 250px;
+  border-radius: 10%;
+}
+.two-column-desc {
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 2;
+}
+table td {
+  padding-left: 70px;
+}
+.two-column-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+}
+
+
+
+/* --------------------------------
+ * my-photos
+ * -------------------------------- */
+.my-photos {
+  padding: 80px 0;
+  background-color: #383634;
+}
+.photos-wrapper {
+  display: table;
+  width: 100%;
+  margin-top: 60px;
+  table-layout: fixed;
+}
+.photos-box {
+  position: relative;
+  display: table-cell;
+}
+.photos-image {
+  display: block;
+  width: 100%;
+  margin: 0 0 60%;
+}
+.photos-description {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  overflow-y: auto;
+}
+.photos-description-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.photos-text {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+.photos-text .button {
+  width: 60%;
+  margin-top: 20px;
+  padding: 3px;
+}
+.photos-box::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.3;
+  transform: scaleY(-1);
+}
+.photos-box.sennsyu::after {
+  background-image: url('../images/4C0ABCA8-D276-4F35-B80E-95E640A3CA81_1_105_c.jpeg');
+}
+.photos-box.mototaki::after {
+  background-image: url('../images/91F2FFED-D0C7-460B-80BE-451F52744B4F_1_105_c.jpeg');
+}
+.photos-box.nanohana::after {
+  background-image: url('../images/5DA2E890-F13F-47E6-A931-DFE28D191903_1_105_c.jpeg');
+}
+.photos-box.kanntou::after {
+  background-image: url('../images/5EB6C31E-7970-4486-98B4-12D544EA35B1_1_105_c.jpeg');
+}
+.photos-box:nth-child(odd) .photos-image {
+  margin: 60% 0 0;
+}
+.photos-box:nth-child(odd) .photos-description,
+.photos-box:nth-child(odd)::after {
+  top: 0;
+}
+
+
+/* --------------------------------
+ * skills
+ * -------------------------------- */
+.skills {
+  padding: 80px 0;
+  background-color: #fff;
+  color: #333;
+}
+.skills-wrapper {
+  display: table;
+  width: 80%;
+  margin: 50px auto 0;
+  table-layout: fixed;
+}
+.skill-box {
+  display: table-cell;
+}
+.skill-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+  border: 4px solid;
+  border-radius: 50%;
+  color: #463503;
+  font-size: 6rem;
+  line-height: 90px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.skill-title {
+  margin: 0 20px 20px;
+  font-size: 1.5rem;
+}
+.skill-text {
+  margin: 0 auto;
+  line-height: 2;
+}
+.skill-text th:last-child {
+  padding-left: 70px;
+}
+/* --------------------------------
+ * contact
+ * -------------------------------- */
+.contact {
+  padding: 80px 0 120px;
+}
+.contact-list {
+  padding-top: 30px;
+}
+
+/* --------------------------------
+ * footer
+ * -------------------------------- */
+.footer {
+  padding: 12px 0;
+  font-size: 1.3rem;
+}
+
+
+/* --------------------------------
+ * smart phone
+ * -------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    background-image: none;
+    
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 1.3rem;
+  }
+  .heading {
+    margin-top: 20px;
+    font-size: 2.5rem;
+  }
+  .button:hover {
+    opacity: 1;
+  }
+
+  /* --- header --- */
+  .header {
+    padding-top: 60px;
+  }
+  .site-title-sub {
+    font-size: 1.7rem;
+  }
+  .site-title-sub::before,
+  .site-title-sub::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .site-title {
+    margin-top: 35px;
+    font-size: 5rem;
+  }
+
+  /* --- about --- */
+  .about-text {
+    line-height: 1.8;
+  }
+
+  /* --- my-photos --- */
+  .photos-wrapper,
+  .photos-box {
+    display: block;
+  }
+  .photos-image {
+    display: none;
+  }
+  .photos-description {
+    position: relative;
+  }
+  .photos-box::after {
+    top: 0;
+    height: 100%;
+    background-size: cover;
+    transform: none;
+  }
+
+  /* --- skills --- */
+  .skills-wrapper,
+  .skill-box {
+    display: block;
+  }
+  .skill-box {
+    margin: 40px auto;
+  }
+  .skill-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    line-height: 92px;
+  }
+  .skill-text {
+    margin: 0 auto;
+  }
+
+  /* --- contact --- */
+  .contact {
+    padding-bottom: 80px;
+  }
+  .contact-form {
+    width: 80%;
+  }
+}
+
+
+/* --------------------------------
+ * challenge
+ *
+ * 31行目からの.heading::before, .heading::afterの
+ * スタイルをコメントアウトしてから適用してください。
+ * -------------------------------- */
+/*
+.heading::before,
+.heading::after {
+  content: '';
+  display: inline-block;
+  width: 0.3em;
+  height: 0.3em;
+  margin: 0 0.5em;
+  border: 1px solid;
+  vertical-align: 0.2em;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.work-box {
+  overflow: hidden;
+}
+.work-image {
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+.work-box:nth-child(odd) .work-image {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+}
+.work-box:nth-child(even) .work-image {
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+}
+.work-box:hover .work-image {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+*/

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Kouhei Portfolio</title>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="lib/lightbox.js"></script>
+  <script src="lib/jquery.lettering.js"></script>
+  <script src="lib/jquery.textillate.js"></script>
+  
+
+  <script>
+    $(function() {
+      $('h1').textillate({
+        in: {
+          effect: 'fadeInDown',
+          delay: 50,
+          shuffle: true
+        }
+      });
+    })
+
+    lightbox.option({
+      'resizeDuration': 1000,
+      'wrapAround': true,
+      "maxWidth": 700,
+    })
+  </script>
+</head>
+<body>
+  <header class="header">
+    <h1 class="site-title">Kouhei Satou</h1>
+    <p class="site-title-sub">portfolio</p>
+    <div class="buttons">
+      <a class="button" href="#about">ABOUT ME</a>
+      <a class="button button-showy" href="#my-photos">My Photos</a>
+      <a class="button" href="#skills">SKILLS</a>
+      <a class="button button-showy" href="#contact">CONTACT</a>
+    </div>
+  </header>
+  <section class="about" id="about">
+    <h2 class="heading">ABOUT ME</h2>
+    <div class="two-column-wrapper">
+      <div class="two-column-image" style="padding-top: 50px;">
+        <img id="img-profile" src="images/IMG_3273.jpeg" alt="img-profile">
+      </div>
+      <div class="two-column-desc">
+        <p class="text">
+          <br>
+        </p>
+        <table>
+          <tbody>
+            <tr>
+              <th>Name</th>
+              <td>佐藤　幸平(Kouhei Satou)</td>
+            </tr>
+            <tr>
+              <th>Birthday</th>
+              <td>1993/01/13</td>
+            </tr>
+            <tr>
+              <th>GitHub</th>
+              <td><a href="https://github.com/kouhei-satou">Kouhei-Satou</a>
+            　</td>
+            </tr>
+            <tr>
+              <th>Twitter</th>
+              <td><a href="https://twitter.com/kohei10498793">ko-hei.AKT.jp</a></td>
+            </tr>
+          </tbody>
+        </table>
+          <br>
+          はじめまして。社会人歴7年の佐藤幸平と申します。<br>
+          介護福祉士として7年勤め、現在は業務未経験ですがプログラミング勉強中です。<br>
+      </div>
+    </div>
+  </section>
+  <section class="my-photos" id="my-photos">
+    <h2 class="heading">My Photos</h2>
+    <p>秋田の素晴らしい景色たち</p>
+    <div class="photos-wrapper">
+      <div class="photos-box sennsyu">
+        <img class="photos-image" src="images/4C0ABCA8-D276-4F35-B80E-95E640A3CA81_1_105_c.jpeg" alt="制作事例1">
+        <div class="photos-description">
+          <div class="photos-description-inner">
+            <p class="photos-text">
+              秋田市<br>
+              千秋公園<br>
+              <a href="images/4C0ABCA8-D276-4F35-B80E-95E640A3CA81_1_105_c.jpeg" rel="lightbox" class="button button-ghost">WATCH</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="photos-box mototaki">
+        <img class="photos-image" src="images/91F2FFED-D0C7-460B-80BE-451F52744B4F_1_105_c.jpeg" alt="制作事例2">
+        <div class="photos-description">
+          <div class="photos-description-inner">
+            <p class="photos-text">
+              にかほ市<br>
+              元滝伏流水<br>
+              <a href="images/91F2FFED-D0C7-460B-80BE-451F52744B4F_1_105_c.jpeg" rel="lightbox" class="button button-ghost">WATCH</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="photos-box nanohana">
+        <img class="photos-image" src="images/5DA2E890-F13F-47E6-A931-DFE28D191903_1_105_c.jpeg" alt="制作事例3">
+        <div class="photos-description">
+          <div class="photos-description-inner">
+            <p class="photos-text">
+              大潟村<br>
+              菜の花ロード<br>
+              <a href="images/5DA2E890-F13F-47E6-A931-DFE28D191903_1_105_c.jpeg" rel="lightbox" class="button button-ghost">WATCH</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="photos-box kanntou">
+        <img class="photos-image" src="images/5EB6C31E-7970-4486-98B4-12D544EA35B1_1_105_c.jpeg" alt="制作事例4">
+        <div class="photos-description">
+          <div class="photos-description-inner">
+            <p class="photos-text">
+              秋田市<br>
+              竿燈祭り<br>
+              <a href="images/5EB6C31E-7970-4486-98B4-12D544EA35B1_1_105_c.jpeg" rel="lightbox" class="button button-ghost">WATCH</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills" id="skills">
+    <h2 class="heading">MY SKILLS</h2>
+    <div class="skills-wrapper">
+      <div class="skill-box">
+        <i class="skill-icon fa fa-desktop"></i>
+        <div class="skill-title">フロントエンド</div>
+        <table class="skill-text">
+          <thead>
+            <tr>
+              <th>技術</th>
+              <th>経験年数</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>HTML.CSS</th>
+              <td>4ヶ月</td>
+            </tr>
+            <tr>
+              <th>Javascript</th>
+              <td>2ヶ月</td>
+            </tr>
+            <tr>
+              <th>jQuery</th>
+              <td>1ヶ月</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="skill-box">
+        <i class="skill-icon fa fa-database"></i>
+        <div class="skill-title">バックエンド</div>
+        <table class="skill-text">
+            <thead>
+              <tr>
+                <th>技術</th>
+                <th>経験年数</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Ruby</th>
+                <td>3ヶ月</td>
+              </tr>
+              <tr>
+                <th>Ruby on Rails</th>
+                <td>3ヶ月</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      <div class="skill-box">
+        <i class="skill-icon fa fa-server"></i>
+        <div class="skill-title">各種ツール</div>
+        <table class="skill-text">
+          <p style="font-weight: 600; line-height: 3rem;">
+            GitHub<br>
+            Visual Studio Code<br>
+            Brackets<br>
+            Atom
+          </p>
+        </table>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2 class="heading">CONTACT</h2>
+    <p>お問い合わせは下記のSNSからお問い合わせください</p>
+    <div class="contact-list">
+      <a href="https://twitter.com/kohei10498793" target="”_blank”">
+        <i class="skill-icon fa fa-twitter"></i>
+      </a>
+      <p style="margin: 0;">twitter</p>
+    </div>
+  </section>
+  <footer class="footer">
+      ©︎ Kouhei Satou
+  </footer>
+  <script src="lib/placeholders.min.js"></script>
+</body>
+</html>
